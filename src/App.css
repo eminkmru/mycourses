@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coursesMainDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+.cardDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+.card {
+  position: relative;
+  width: 350px;
+  border: 1px solid gray;
+  border-radius: 30px;
+  padding: 30px 40px;
+}
+.cardPrice {
+  font-style: italic;
+  color: rgb(154, 23, 23);
+  position: absolute;
+  right: 32px;
+  top: 0;
+  font-size: 20px;
+}
+.cardDeleteBtn {
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: rebeccapurple;
   color: white;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.cardP {
+  height: 234px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.refleshDiv {
+  text-align: center;
+}
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.prevBtn {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(137, 15, 15);
+  cursor: pointer;
+}
+.nextBtn {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  color: rgb(137, 15, 15);
+  cursor: pointer;
+}
+.courseTitleAndButton {
+  text-align: center;
+  margin-bottom: 20px;
 }
